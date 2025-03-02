@@ -54,9 +54,9 @@ check firewall
 ```
 systemctl status firewalld
 ```
-enable firewalld
+enable firewall
 ```
-systemctl enable firewalld
+systemctl enable --now firewalld
 ```
 allow port 80
 ```
@@ -73,6 +73,10 @@ firewall-cmd --reload
 check firewalld
 ```
 firewall-cmd --list-all
+```
+check default zone
+```
+firewall-cmd --get-default-zone
 ```
 
 # Selinux
